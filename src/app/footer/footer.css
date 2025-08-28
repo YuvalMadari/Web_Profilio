@@ -1,0 +1,105 @@
+body {
+  background-color: #0d1117; /* GitHub dark */
+  font-family: "Fira Code", monospace;
+  color: #000000; /* gray-200 */
+}
+
+/* Card container */
+.card {
+  background: #161b22; /* Dark container */
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 255, 170, 0.15);
+  margin: 1rem auto;
+  max-width: 480px;
+}
+
+/* Message above progress bar */
+.card p {
+  font-size: 1.25rem;   /* bigger text */
+  font-weight: 600;     /* bold for emphasis */
+  color: #ffffff;       /* pure white */
+  text-align: center;   /* keep it centered */
+  margin-bottom: 1rem;  /* space before progress bar */
+}
+
+
+/* Input field container */
+p-iconfield {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem; /* spacing between inputs */
+}
+
+/* Input icons */
+p-inputicon i {
+  color: #00ffa6; /* Neon green */
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.2s ease;
+}
+
+p-iconfield input {
+  width: 100%;
+  padding: 0.85rem 0.85rem 0.85rem 2.7rem;
+  border-radius: 0.75rem;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: #e5e7eb;
+  transition: all 0.2s ease-in-out;
+}
+
+p-iconfield input:focus {
+  border-color: #00ffa6;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.4);
+}
+
+p-iconfield input::placeholder {
+  color: #6b7280; /* subtle gray */
+}
+
+/* Submit Button */
+p-button {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem auto; /* extra space top/bottom + centered */
+  width: 60%; /* centered and not too wide */
+}
+
+p-button ::ng-deep .p-button {
+  background: linear-gradient(90deg, #00ffa6, #00d4ff, #6c63ff);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  color: #0d1117;
+  width: 100%;
+  text-align: center;
+}
+
+p-button ::ng-deep .p-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0, 255, 170, 0.5);
+}
+
+/* Progress Bar */
+p-progressbar {
+  margin-top: 2rem;
+}
+
+p-progressbar ::ng-deep .p-progressbar {
+  border-radius: 9999px;
+  background-color: #30363d;
+}
+
+p-progressbar ::ng-deep .p-progressbar-value {
+  background: linear-gradient(90deg, #00ffa6, #00d4ff, #6c63ff);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
