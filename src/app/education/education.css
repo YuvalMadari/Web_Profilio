@@ -1,0 +1,84 @@
+/* Card container with extra vertical spacing */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem; /* Increased internal spacing */
+    margin: 3rem auto; /* Adds space above and below the card */
+    max-width: 800px;
+}
+
+/* Tab list styling */
+p-tablist {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* Individual tab */
+p-tab {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+p-tab:hover {
+    background-color: #f5f5f5;
+}
+
+/* Active tab indicator */
+p-tab[value="0"],
+p-tab[value="1"],
+p-tab[value="2"] {
+    font-weight: bold;
+}
+
+/* Avatar styling */
+p-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Badge styling */
+p-badge {
+    background-color: #007ad9;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+}
+
+/* Tab panel content */
+p-tabpanel {
+    padding: 1rem 0;
+}
+
+p-tabpanel p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Scrollable tabs */
+p-tabs[scrollable] p-tablist {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+p-tabs[scrollable] p-tablist::-webkit-scrollbar {
+    height: 6px;
+}
+
+p-tabs[scrollable] p-tablist::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
