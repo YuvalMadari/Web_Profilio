@@ -1,0 +1,58 @@
+.card {
+    margin: 3rem auto;
+    padding: 2rem 4rem; /* More internal space left/right */
+    width: 90%; /* Take full width of parent */
+    max-width: none; /* Remove the 900px limit */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+
+/* Timeline customization */
+.customized-timeline {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Marker styling */
+.customized-timeline .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Card content inside timeline */
+p-card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Image styling */
+.shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph spacing */
+p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Button styling */
+p-button {
+    margin-top: 1rem;
+    display: inline-block;
+}
