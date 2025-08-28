@@ -1,0 +1,63 @@
+.card {
+  border-radius: 3rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+  background-color: var(--surface-card);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Toolbar container */
+.p-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+  background-color: var(--surface-ground);
+}
+
+/* Left section (start template) */
+.p-toolbar .start-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* SVG Icon */
+.p-toolbar svg {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+/* PrimeNG buttons */
+.p-button {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.p-button[text][plain] {
+  background: none;
+  color: var(--text-color);
+  border: none;
+}
+
+.p-button[text][plain]:hover {
+  background-color: var(--surface-hover);
+}
+
+/* Right section (end template) */
+.p-toolbar .end-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Avatar styling */
+.p-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px var(--surface-border);
+}
