@@ -1,0 +1,203 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #1e1e2f, #0d0d1a);
+  color: #fff;
+  font-size: 22px;
+  line-height: 2;
+}
+
+/* === Hero Section Animation === */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 10rem;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+/* === Profile Picture === */
+.profile-container {
+  text-align: center;
+  flex: 1;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 8px solid #ffd700;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 60px rgba(255, 215, 0, 0.9);
+}
+
+.location {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* === Intro Text === */
+.intro-text {
+  flex: 2;
+  max-width: 900px;
+  padding-left: 4rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #ffd700, #ff6f61, #ffd700);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* === Buttons === */
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.primary {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+}
+
+button.secondary {
+  background: transparent;
+  border: 3px solid #ffd700;
+  color: #ffd700;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* === Navigation Bar === */
+.navbar {
+  background-color: #0d0d1a;
+  padding: 2rem 4rem;
+  font-size: 1.3rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+/* === Social Icons === */
+.social-icons {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 14px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-8px) scale(1.2);
+}
+.cursor {
+  display: inline-block;
+  animation: blink s infinite;
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+#typed-role {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
